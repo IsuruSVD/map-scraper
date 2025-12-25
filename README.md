@@ -1,74 +1,196 @@
-# map-scraper
+## Google Maps Business Scraper
 
-A free, Python-based tool for scraping publicly available business information from Google Maps for a specified search query and geographic area, using Selenium without paid APIs.
+A free and open-source Python tool for scraping publicly available business information from Google Maps based on a business category and geographic area.
+The project includes a simple web interface (Flask) to submit inputs and automatically generate CSV files.
 
-This repository provides a Python automation tool that scrapes publicly available business listings from Google Maps based on a user-defined search query and geographic area. The tool extracts business names, phone numbers, and addresses using Selenium WebDriver and modern Selenium Manager support (Chrome 115+), eliminating the need for manual ChromeDriver management or paid APIs.
+## ✨ Features
 
-The project is designed as a reusable, configurable scraper suitable for building business directories, market research datasets, or location-based analysis, while respecting publicly visible data sources.
+Scrape Google Maps without paid APIs
 
-# Google Maps Business Scraper
+Extract:
 
-A free and open-source Python tool for scraping publicly available business information from Google Maps based on a specific search query and geographic area.
+Business name
 
-## Features
+Phone number (if publicly available)
 
-- Scrapes Google Maps using Selenium (no paid APIs)
-- Extracts business name, phone number, and address
-- Uses Selenium Manager for automatic ChromeDriver handling (Chrome 115+)
-- Configurable search keywords and locations
-- Outputs data to CSV (Excel compatible)
-- Suitable for any business category or region
+Address
 
-## Requirements
+Simple web interface (Flask)
 
-- Python 3.10+
-- Google Chrome (115 or newer)
-- Selenium 4.10+
-- Pandas
+Automatic ChromeDriver handling (Selenium Manager)
 
-## Basic Usage
+CSV output (Excel compatible)
 
-1. Create and activate a Python virtual environment
-2. Install dependencies:
-   ```bash
-   pip install selenium pandas
-3. Set the desired search query and location in the script
-4. Run the scraper
-5. Collected data will be saved to a CSV file
-   
+Configurable category and area
 
-## Use Cases
+Suitable for any country or business type
 
-Business directory creation
-Market research
-Location-based data analysis
-Academic and learning purposes
+## 🛠 Tech Stack
+
+Python 3.10+
+
+Flask – Web interface
+
+Selenium (>= 4.10) – Browser automation
+
+Pandas – CSV generation
+
+Google Chrome (115+)
+
+## 📁 Project Structure
+google-maps-business-scraper/
+├── app.py
+├── scraper.py
+├── templates/
+│   └── index.html
+├── output/
+├── requirements.txt
+├── .gitignore
+└── README.md
+
+## ✅ Prerequisites
+
+Before starting, make sure you have:
+
+Windows / Linux / macOS
+
+Internet connection
+
+Google Chrome installed
+
+## 🚀 STEP-BY-STEP INSTALLATION GUIDE
+1️⃣ Install Python
+Download Python
+
+👉 https://www.python.org/downloads/
+
+✔ Install Python 3.10 or newer
+✔ During installation, CHECK:
+
+☑ Add Python to PATH
+
+Verify installation
+
+Open Command Prompt / Terminal:
+
+python --version
 
 
-## Disclaimer
+Expected output:
 
-This tool collects only publicly available information visible on Google Maps. Users are responsible for ensuring compliance with Google Maps Terms of Service and applicable local laws when using or distributing collected data.
+Python 3.x.x
 
-
-## 🔹 Suggested GitHub Topics (Very Important for Reach)
-
-google-maps
-business-scraper
-selenium
-python
-web-automation
-location-based-services
-open-source
+2️⃣ Clone the Repository
+git clone https://github.com/your-username/google-maps-business-scraper.git
+cd google-maps-business-scraper
 
 
-## 🔹 Why This Positioning Is Smart
+Or download ZIP and extract it.
 
-✔ Not limited to one country  
-✔ Not tied to one business type  
-✔ Clearly states **public data only**  
-✔ Avoids API misuse claims  
-✔ Portfolio + open-source friendly  
+3️⃣ Create a Python Virtual Environment (Recommended)
 
+Virtual environments keep dependencies isolated.
+
+python -m venv venv
+
+4️⃣ Activate the Virtual Environment
+On Windows
+venv\Scripts\activate
+
+On macOS / Linux
+source venv/bin/activate
+
+
+You should see:
+
+(venv)
+
+5️⃣ Upgrade pip
+python -m pip install --upgrade pip
+
+6️⃣ Install Required Libraries
+pip install flask selenium pandas
+
+
+Or using requirements.txt:
+
+pip install -r requirements.txt
+
+Required versions
+
+Selenium >= 4.10
+
+Pandas (latest)
+
+Flask (latest)
+
+7️⃣ Google Chrome & Selenium Manager
+
+Install Google Chrome (version 115 or newer)
+
+No manual ChromeDriver download needed
+
+Selenium Manager automatically handles drivers
+
+✔ Nothing else required
+
+▶️ RUNNING THE APPLICATION
+8️⃣ Start the Flask App
+python app.py
+
+
+You should see:
+
+Running on http://127.0.0.1:5000
+
+9️⃣ Open the Web Interface
+
+Open your browser and go to:
+
+http://127.0.0.1:5000
+
+🔍 How to Use
+
+Enter a business category
+
+Example: computer shop, pharmacy, restaurant
+
+Enter an area / location
+
+Example: Colombo, Kandy, Galle
+
+Click Start Scraping
+
+Google Chrome will open and collect data
+
+CSV file will be saved in the output/ folder
+
+📄 Output Example
+output/computer_shop_Colombo.csv
+
+
+CSV columns:
+
+Shop Name
+
+Phone
+
+Address
+
+⚠️ Notes & Limitations
+
+Only publicly visible data is collected
+
+Some businesses may not show phone numbers
+
+Scraping speed is intentionally slow to avoid blocking
+
+Do not run multiple instances simultaneously
+
+📜 Disclaimer
+
+This project is intended for educational, research, and directory-building purposes only.
+Users are responsible for ensuring compliance with Google Maps Terms of Service and local regulations when using or distributing scraped data.
 
 
 
