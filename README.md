@@ -9,11 +9,9 @@ Scrape Google Maps without paid APIs
 
 Extract:
 
-Business name
-
-Phone number (if publicly available)
-
-Address
+1. Business name
+2. Phone number (if publicly available)
+3. Address
 
 Simple web interface (Flask)
 
@@ -28,16 +26,13 @@ Suitable for any country or business type
 ## 🛠 Tech Stack
 
 Python 3.10+
-
 Flask – Web interface
-
 Selenium (>= 4.10) – Browser automation
-
 Pandas – CSV generation
-
 Google Chrome (115+)
 
 ## 📁 Project Structure
+
 google-maps-business-scraper/
 ├── app.py
 ├── scraper.py
@@ -51,17 +46,15 @@ google-maps-business-scraper/
 ## ✅ Prerequisites
 
 Before starting, make sure you have:
-
 Windows / Linux / macOS
-
 Internet connection
-
 Google Chrome installed
 
 ## 🚀 STEP-BY-STEP INSTALLATION GUIDE
-1️⃣ Install Python
-Download Python
 
+1️⃣ Install Python
+
+Download Python
 👉 https://www.python.org/downloads/
 
 ✔ Install Python 3.10 or newer
@@ -72,45 +65,41 @@ Download Python
 Verify installation
 
 Open Command Prompt / Terminal:
-
 python --version
 
-
 Expected output:
-
 Python 3.x.x
 
 2️⃣ Clone the Repository
+
 git clone https://github.com/your-username/google-maps-business-scraper.git
 cd google-maps-business-scraper
-
 
 Or download ZIP and extract it.
 
 3️⃣ Create a Python Virtual Environment (Recommended)
 
 Virtual environments keep dependencies isolated.
-
 python -m venv venv
 
 4️⃣ Activate the Virtual Environment
+
 On Windows
 venv\Scripts\activate
 
 On macOS / Linux
 source venv/bin/activate
 
-
 You should see:
-
 (venv)
 
 5️⃣ Upgrade pip
+
 python -m pip install --upgrade pip
 
 6️⃣ Install Required Libraries
-pip install flask selenium pandas
 
+pip install flask selenium pandas
 
 Or using requirements.txt:
 
@@ -127,36 +116,31 @@ Flask (latest)
 7️⃣ Google Chrome & Selenium Manager
 
 Install Google Chrome (version 115 or newer)
-
 No manual ChromeDriver download needed
-
 Selenium Manager automatically handles drivers
 
 ✔ Nothing else required
 
 ▶️ RUNNING THE APPLICATION
+
 8️⃣ Start the Flask App
+
 python app.py
 
-
 You should see:
-
 Running on http://127.0.0.1:5000
 
 9️⃣ Open the Web Interface
 
 Open your browser and go to:
-
 http://127.0.0.1:5000
 
 🔍 How to Use
 
 Enter a business category
-
 Example: computer shop, pharmacy, restaurant
 
 Enter an area / location
-
 Example: Colombo, Kandy, Galle
 
 Click Start Scraping
@@ -172,19 +156,14 @@ output/computer_shop_Colombo.csv
 CSV columns:
 
 Shop Name
-
 Phone
-
 Address
 
 ⚠️ Notes & Limitations
 
 Only publicly visible data is collected
-
 Some businesses may not show phone numbers
-
 Scraping speed is intentionally slow to avoid blocking
-
 Do not run multiple instances simultaneously
 
 📜 Disclaimer
