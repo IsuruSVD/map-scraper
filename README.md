@@ -35,7 +35,7 @@ A free and open-source Python tool for scraping publicly available business info
 3. Set the desired search query and location in the script
 4. Run the scraper
 5. Collected data will be saved to a CSV file
-   ---
+   
 
 ## Use Cases
 
@@ -43,12 +43,12 @@ Business directory creation
 Market research
 Location-based data analysis
 Academic and learning purposes
----
+
 
 ## Disclaimer
 
 This tool collects only publicly available information visible on Google Maps. Users are responsible for ensuring compliance with Google Maps Terms of Service and applicable local laws when using or distributing collected data.
----
+
 
 ## 🔹 Suggested GitHub Topics (Very Important for Reach)
 
@@ -59,7 +59,7 @@ python
 web-automation
 location-based-services
 open-source
----
+
 
 ## 🔹 Why This Positioning Is Smart
 
@@ -68,7 +68,7 @@ open-source
 ✔ Clearly states **public data only**  
 ✔ Avoids API misuse claims  
 ✔ Portfolio + open-source friendly  
----
+
 
 
 
