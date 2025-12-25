@@ -1,2 +1,3 @@
+flask
 selenium>=4.10
 pandas

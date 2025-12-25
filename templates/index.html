@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Maps Business Scraper</title>
+</head>
+<body>
+    <h2>Google Maps Business Scraper</h2>
+
+    <form method="post">
+        <label>Business Category:</label><br>
+        <input type="text" name="category" required><br><br>
+
+        <label>Area / Location:</label><br>
+        <input type="text" name="area" required><br><br>
+
+        <button type="submit">Start Scraping</button>
+    </form>
+
+    {% if file_path %}
+        <p>✅ Data saved to: <b>{{ file_path }}</b></p>
+    {% endif %}
+</body>
+</html>
